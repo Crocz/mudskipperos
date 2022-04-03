@@ -14,8 +14,8 @@ _start:
     ldr x1, =_start
     mov sp, x1
 
-    ldr x1, =_bss_start
-    ldr w2, =_bss_size
+    ldr x1, =__bss_start
+    ldr w2, =__bss_size
 
 3:
     cbz w2, 4f
